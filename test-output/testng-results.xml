@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[List is not sorted]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4695" started-at="2019-08-26T15:57:39Z" finished-at="2019-08-26T15:57:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4695" started-at="2019-08-26T15:57:39Z" finished-at="2019-08-26T15:57:43Z">
+      <class name="assignments.ListIsSorted">
+        <test-method status="PASS" signature="sortedlist()[pri:0, instance:assignments.ListIsSorted@1e88b3c]" name="sortedlist" duration-ms="4644" started-at="2019-08-26T15:57:39Z" finished-at="2019-08-26T15:57:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[List is not sorted]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sortedlist -->
+      </class> <!-- assignments.ListIsSorted -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
