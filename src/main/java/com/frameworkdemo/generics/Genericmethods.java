@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -53,6 +55,7 @@ public class Genericmethods extends Base{
 		{
 			b=By.tagName(locator[1]);
 		}
+		
 		return gv.driver.findElement(b);
 		
 	}
@@ -96,6 +99,7 @@ public class Genericmethods extends Base{
 	}
 	public void setdata(String data,String elementname)
 	{
+		System.out.println(gv.driver);
 		findWebelement(elementname).sendKeys(data);
 	}
 	public void clickOnElement(String elementname)
@@ -143,15 +147,12 @@ public class Genericmethods extends Base{
 		JavascriptExecutor j = (JavascriptExecutor)gv.driver;
 		j.executeScript("window.scrollBy(xoffset,yoffset)");
 	}
-	public void main() throws FileNotFoundException, IOException
+	public Set<String> getwindowhandles()
 	{
-		
-		Genericmethods g=new Genericmethods();
-		g.init();
-		WebDriverManager.chromedriver().setup();
-		g.gv.driver=new ChromeDriver();
-		g.enterURL();
-		System.out.println(g.findWebelement("username"));
-		g.findWebelement("username").sendKeys("admin");
+		return gv.driver.getWindowHandles();
+	}
+	public String getwindowhandle()
+	{
+		return gv.driver.getWindowHandle();
 	}
 }

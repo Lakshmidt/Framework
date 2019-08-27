@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[List is not sorted]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4695" started-at="2019-08-26T15:57:39Z" finished-at="2019-08-26T15:57:43Z">
+  <suite name="Default suite" duration-ms="14023" started-at="2019-08-27T11:52:08Z" finished-at="2019-08-27T11:52:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4695" started-at="2019-08-26T15:57:39Z" finished-at="2019-08-26T15:57:43Z">
-      <class name="assignments.ListIsSorted">
-        <test-method status="PASS" signature="sortedlist()[pri:0, instance:assignments.ListIsSorted@1e88b3c]" name="sortedlist" duration-ms="4644" started-at="2019-08-26T15:57:39Z" finished-at="2019-08-26T15:57:43Z">
+    <test name="Default test" duration-ms="14023" started-at="2019-08-27T11:52:08Z" finished-at="2019-08-27T11:52:22Z">
+      <class name="com.frameworkdemo.excel.Login">
+        <test-method status="PASS" signature="beforesuite()[pri:0, instance:com.frameworkdemo.excel.Login@f6c48ac]" name="beforesuite" is-config="true" duration-ms="16" started-at="2019-08-27T11:52:08Z" finished-at="2019-08-27T11:52:08Z">
           <reporter-output>
-            <line>
-              <![CDATA[List is not sorted]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- sortedlist -->
-      </class> <!-- assignments.ListIsSorted -->
+        </test-method> <!-- beforesuite -->
+        <test-method status="PASS" signature="beforemethod(org.testng.ITestResult)[pri:0, instance:com.frameworkdemo.excel.Login@f6c48ac]" name="beforemethod" is-config="true" duration-ms="8865" started-at="2019-08-27T11:52:08Z" finished-at="2019-08-27T11:52:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC01 status=SUCCESS method=Login.TC01()[pri:0, instance:com.frameworkdemo.excel.Login@f6c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="TC01()[pri:0, instance:com.frameworkdemo.excel.Login@f6c48ac]" name="TC01" duration-ms="498" started-at="2019-08-27T11:52:17Z" finished-at="2019-08-27T11:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.frameworkdemo.excel.Login@f6c48ac]" name="closeApp" is-config="true" duration-ms="2171" started-at="2019-08-27T11:52:20Z" finished-at="2019-08-27T11:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.frameworkdemo.excel.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -44,7 +44,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Lakshmi/Music/jarfiles/Extentreport/extentreports-4.0.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Lakshmi/Music/jarfiles/Apache_POI/poi-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Lakshmi/Music/jarfiles/Apache_POI/poi-ooxml-3.17.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

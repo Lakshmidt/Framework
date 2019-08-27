@@ -11,17 +11,15 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.frameworkdemo.generics.SelectClassActions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Noduplicatesinlist {
+public class Noduplicatesinlist extends SelectClassActions{
 	@Test
 	public void duplicatesinlist()
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.get("file:///C:/Users/Lakshmi/Desktop/html%20codes/Singleselct.html");
-		Select s=new Select(driver.findElement(By.id("slv")));
-		List<WebElement> lst = s.getOptions();
+		List<WebElement> lst = getalloptions("selectelement");
 		boolean f=false;
 		for(int i=0;i<lst.size();i++)
 		{
@@ -38,6 +36,5 @@ public class Noduplicatesinlist {
 		}
 		if(f)
 		Reporter.log("No duplicates present in the list",true);
-		driver.close();
 	}
 }
