@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.frameworkdemo.generics.Genericmethods;
 
 @Listeners(com.frameworkdemo.utility.Listenersclass.class)
-public class Actimelogin extends Genericmethods {
+public class Actimelogin extends Base {
 
 	@Test
 	public void login() throws InterruptedException, FileNotFoundException, IOException {
